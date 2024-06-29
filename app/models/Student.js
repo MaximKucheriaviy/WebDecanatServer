@@ -52,6 +52,12 @@ const StudentSchema = new Schema({
     type: Number,
     default: 2024,
   },
+  ticketCode: {
+    type: String,
+  },
+  token: {
+    type: String,
+  },
   foreigner: {
     type: Boolean,
     default: false,
