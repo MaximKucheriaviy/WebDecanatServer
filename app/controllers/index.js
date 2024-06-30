@@ -1,3 +1,4 @@
 const getStudentController = require("./getStudentController");
+const signUpStudentController = require("./signUpStudentController");
 
-module.exports = { getStudentController };
+module.exports = { getStudentController, signUpStudentController };

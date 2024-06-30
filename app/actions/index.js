@@ -1,3 +1,4 @@
 const getStudent = require("./getStudent");
+const signUpStudent = require("./signUpStudent");
 
-module.exports = { getStudent };
+module.exports = { getStudent, signUpStudent };

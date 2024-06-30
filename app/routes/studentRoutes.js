@@ -1,7 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const { getStudentController } = require("../controllers");
+const {
+  getStudentController,
+  signUpStudentController,
+} = require("../controllers");
+const { authMidlvare } = require("../service/jwt");
 
-router.get("/:id", getStudentController);
+router.get("/", authMidlvare, getStudentController);
+router.post("/auth", signUpStudentController);
 
 module.exports = router;
