@@ -13,5 +13,5 @@ module.exports = async (ticketCode) => {
   const token = createToken(student._id);
   student.token = token;
   await student.save();
-  return token;
+  return student;
 };
